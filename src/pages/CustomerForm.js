@@ -22,7 +22,7 @@ function CustomerForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const apiUrl = "http://localhost:5000/api/customer"; // Updated endpoint
+        const apiUrl = "http://3.111.36.54:5000/api/customer"; // Updated endpoint
 
         try {
             const response = await fetch(apiUrl, {
