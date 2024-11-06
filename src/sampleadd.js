@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { Customer, Opportunity, User, Interaction, Task, Team } = require('./pages/Mongo.js');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/CRM', {
+mongoose.connect('mongodb://3.111.36.54:27017/CRM', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

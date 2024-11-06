@@ -9,7 +9,7 @@ const ManageUser = () => {
 
   useEffect(() => {
     // Fetch users from the backend when the component mounts
-    fetch('http://localhost:5000/api/users')
+    fetch('http://3.111.36.54:5000/api/users')
       .then((response) => response.json())
       .then((data) => {
         console.log('Data received from backend:', data);
@@ -20,7 +20,7 @@ const ManageUser = () => {
 
   const removeUser = async (userId) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/users/${userId}`, {
+      const response = await fetch(`http://3.111.36.54:5000/api/users/${userId}`, {
         method: 'DELETE',
       });
 

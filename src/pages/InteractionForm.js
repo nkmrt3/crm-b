@@ -18,7 +18,7 @@ function InteractionForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const apiUrl = "http://localhost:5000/api/interaction"; // Updated endpoint
+        const apiUrl = "http://3.111.36.54:5000/api/interaction"; // Updated endpoint
 
         try {
             const response = await fetch(apiUrl, {

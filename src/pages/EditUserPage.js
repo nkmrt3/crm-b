@@ -29,7 +29,7 @@ function EditUserPage() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:5000/api/check-username/${username}`);
+      const response = await fetch(`http://3.111.36.54:5000/api/check-username/${username}`);
       const data = await response.json();
 
       console.log(data); // Log the response for debugging
@@ -60,7 +60,7 @@ function EditUserPage() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/edit-user', {
+      const response = await fetch('http://3.111.36.54:5000/api/edit-user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

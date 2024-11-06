@@ -2,7 +2,7 @@
 import mongoose from "mongoose";
 
 
-mongoose.connect('mongodb://localhost:27017/CRM', {
+mongoose.connect('mongodb://3.111.36.54:27017/CRM', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })

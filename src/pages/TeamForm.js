@@ -18,7 +18,7 @@ function TeamForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/create-team', {
+      const response = await fetch('http://3.111.36.54:5000/api/create-team', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
