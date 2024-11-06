@@ -1,0 +1,11 @@
+.landing-text {
+  text-align: center; /* Center the text horizontally */
+  margin-top: 20px; /* Add some spacing from the logo and login button */
+  font-size: 24px; /* Adjust the font size */
+  color: #333; /* Change the text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+  background-color: rgb(30, 30, 30); /* Add a background color */
+  padding: 20px; /* Add padding around the text */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+}

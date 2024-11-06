@@ -1,0 +1,83 @@
+const sampleOpportunityData = {
+  OpportunityID: 1,
+  Customer: mongoose.Types.ObjectId('your-customer-object-id-here'), // Replace with the actual ObjectID
+  ContactName: 'Jane Doe',
+  OpportunityName: 'Sample Opportunity',
+  Stage: 'Prospect',
+  Value: 50000,
+  CloseDate: new Date(),
+  CreatedDate: new Date(),
+  Notes: 'This is a sample opportunity.',
+};
+
+const sampleUserData = {
+  UserID: 1,
+  Username: 'sampleuser',
+  Password: 'samplepassword',
+  Email: 'sampleuser@example.com',
+  FirstName: 'Sample',
+  LastName: 'User',
+  JobTitle: 'Developer',
+  Department: 'IT',
+  Phone: '987-654-3210',
+  HireDate: new Date(),
+  Role: 'Admin',
+};
+
+const sampleInteractionData = {
+  InteractionID: 1,
+  Customer: mongoose.Types.ObjectId('your-customer-object-id-here'), // Replace with the actual ObjectID
+  ContactName: 'Alice Smith',
+  Type: 'Meeting',
+  InteractionDate: new Date(),
+  Participants: ['Alice Smith', 'Bob Johnson'],
+  Notes: 'This is a sample interaction.',
+};
+
+const sampleTaskData = {
+  TaskID: 1,
+  Title: 'Sample Task',
+  Description: 'This is a sample task.',
+  DueDate: new Date(),
+  Assignee: 'John Doe',
+  Status: 'Pending',
+  CreatedDate: new Date(),
+};
+
+const sampleTeamData = {
+  TeamID: 1,
+  TeamName: 'Sample Team',
+  TeamLead: mongoose.Types.ObjectId('your-user-object-id-here'), // Replace with the actual ObjectID
+  TeamMembers: [mongoose.Types.ObjectId('another-user-object-id-here')], // Replace with the actual ObjectIDs
+};
+
+// Add sample documents
+async function addSampleDocuments() {
+  try {
+    const customer = await Customer.create(sampleCustomerData);
+    console.log('Sample Customer added:', customer);
+
+    const opportunity = await Opportunity.create(sampleOpportunityData);
+    console.log('Sample Opportunity added:', opportunity);
+
+    const user = await User.create(sampleUserData);
+    console.log('Sample User added:', user);
+
+    const interaction = await Interaction.create(sampleInteractionData);
+    console.log('Sample Interaction added:', interaction);
+
+    const task = await Task.create(sampleTaskData);
+    console.log('Sample Task added:', task);
+
+    const team = await Team.create(sampleTeamData);
+    console.log('Sample Team added:', team);
+
+    // Close the connection after adding samples
+    mongoose.connection.close();
+  } catch (error) {
+    console.error('Error adding sample documents:', error);
+  }
+}
+
+// Call the function to add sample documents
+addSampleDocuments();

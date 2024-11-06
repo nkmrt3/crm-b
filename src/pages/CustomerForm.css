@@ -1,0 +1,52 @@
+/* CustomerForm.css */
+.customer-form {
+  padding: 20px;
+  background-color: #f8f9fd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h1 { 
+  text-align: center; 
+  color: #fff;
+}
+
+.full{
+  background-color: rgb(33, 33, 33);
+}
